@@ -45,6 +45,7 @@ class TweetManager:
         usernames_per_batch = 20
 
         if hasattr(tweetCriteria, 'username'):
+            print('yaah')
             if type(tweetCriteria.username) == str or not hasattr(tweetCriteria.username, '__iter__'):
                 tweetCriteria.username = [tweetCriteria.username]
 
